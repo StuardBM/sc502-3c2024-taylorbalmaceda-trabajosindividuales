@@ -1,0 +1,184 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f9fc;
+    color: #333333;
+}
+
+/* Barra de navegación */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #176b87;
+    padding: 20px 50px;
+}
+
+.logo h2 {
+    color: white;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    color: #b4e4ff;
+}
+
+
+
+/* Perfil del doctor */
+
+.perfil-doctor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 40px;
+
+    background-color: white;
+    border-radius: 10px;
+}
+
+.foto-doctor img {
+    width: 300px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.informacion-doctor {
+    max-width: 550px;
+}
+
+.nombre-doctor {
+    color: #176b87;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.especialidad-doctor {
+    color: #64a7bd;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#descripcion-doctor {
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.boton-cita {
+    background-color: #176b87;
+    color: white;
+
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.boton-cita:hover {
+    background-color: #0f5269;
+}
+
+/* Sección de comentarios */
+
+.seccion-comentarios {
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 20px;
+}
+
+.seccion-comentarios h2 {
+    text-align: center;
+    color: #176b87;
+    margin-bottom: 30px;
+}
+
+.comentarios-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.tarjeta-comentario {
+    background-color: white;
+    padding: 25px;
+    border: 1px solid #d9e7ed;
+    border-radius: 8px;
+    flex: 1;
+}
+
+.tarjeta-comentario h3 {
+    color: #176b87;
+    margin-bottom: 15px;
+}
+
+.tarjeta-comentario p {
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.tarjeta-comentario span {
+    color: #777777;
+    font-size: 14px;
+}
+
+/* Diseño responsive */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .perfil-doctor {
+        flex-direction: column;
+        margin: 30px 20px;
+        padding: 25px;
+        text-align: center;
+    }
+
+    .foto-doctor img {
+        width: 250px;
+        height: 300px;
+    }
+
+    .comentarios-container {
+        flex-direction: column;
+    }
+
+    .seccion-comentarios {
+        margin: 30px 20px;
+    }
+}
